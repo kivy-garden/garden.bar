@@ -40,4 +40,13 @@ BoxLayout:
 **property** | **usage**
 -----------|-------------
 **value** | Value that bar represents. Accepts values in 0.-100. range (percentage).`value` is a [`kivy.properties.BoundedNumericProperty`](https://kivy.org/docs/api-kivy.properties.html#kivy.properties.BoundedNumericProperty) and defaults to `0`.
-**orientation** | Direction in which value drawing occurs.
+**orientation** | """Orientation of the value drawing.
+
+Can take one of the 4 values:
+    `lr`: from left to right
+    `rl`: from right to left
+    `bt`: from bottom to top
+    `tb`: from top to bottom
+
+`orientation` is a `~kivy.properties.OptionProperty`
+and defaults to `bt`.
