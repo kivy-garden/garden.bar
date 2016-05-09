@@ -35,8 +35,6 @@ BoxLayout:
 
 ## API
 
-`Bar` class provides the set of properties, which changed provide a specific widget behaviour.
-
-These properties are a standard [Kivy properties](https://kivy.org/docs/api-kivy.properties.html), so it means they are event driven and bindable.
+`Bar` class provides the set of properties, which changed provide a specific widget behaviour. These properties are a standard [Kivy properties](https://kivy.org/docs/api-kivy.properties.html), so it means they are event driven and bindable.
 
 `value`: Value that bar represents. Accepts values in `0. - 100.` range (percentage).`value` is a `~kivy.properties.BoundedNumericProperty` and defaults to `0`.
