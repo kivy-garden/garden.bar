@@ -60,5 +60,4 @@ Orientation of the value drawing. It can take one of the 4 values:
 
 `tb` from top to bottom
 
-`orientation` is a `~kivy.properties.OptionProperty`
-and defaults to `bt`.
+`orientation` is a [`kivy.properties.OptionProperty`](https://kivy.org/docs/api-kivy.properties.html#kivy.properties.OptionProperty) and defaults to `bt`.
