@@ -63,17 +63,17 @@ Orientation of the value drawing. It can take one of the 4 values:
 ```
 color
 ```
-Color of the value drawing. `color` is a `kivy.properties.ListProperty` and defaults to [1, 1, 1, 1].
+Color of the value drawing. `color` is a `kivy.properties.ListProperty` and defaults to `[1, 1, 1, 1]`.
 
 ```
 background_color
 ```
-Color of the background. `background_color` is a `kivy.properties.ListProperty` and defaults to [0, 0, 0, 1].
+Color of the background. `background_color` is a `kivy.properties.ListProperty` and defaults to `[0, 0, 0, 1]`.
 
 ```
 animated
 ```
-Indicates if the bar should be animated. `animated` is a :class:`~kivy.properties.BooleanProperty` and defaults to True.
+Indicates if the bar should be animated. `animated` is a :class:`~kivy.properties.BooleanProperty` and defaults to `True`.
 
 ```
 anim_type
