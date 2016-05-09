@@ -4,7 +4,7 @@
 as colored rectangle, known from f.e. statistics graphs/charts. It has no interactive elements and is a display-only widget.
 
 Bar widget supports animating the value changes
-with the power of [`kivy.animation.Animation`](https://kivy.org/docs/api-kivy.animation.html) class. Bar supports all [`kivy.animation.AnimationTransition`](https://kivy.org/docs/api-kivy.animation.html#kivy.animation.AnimationTransition) class animation types. Animation could be disabled by setting `animated` to False. The color of the bar and the background also can be customized.
+with the power of [`kivy.animation.Animation`](https://kivy.org/docs/api-kivy.animation.html) class. Bar supports all [`kivy.animation.AnimationTransition`](https://kivy.org/docs/api-kivy.animation.html#kivy.animation.AnimationTransition) class animation types. Animation could be disabled by setting `animated` to `False`. The color of the bar and the background also can be customized.
 
 Bar widget works with all orientations: the value can be drawn
 from left, top, right or bottom.
