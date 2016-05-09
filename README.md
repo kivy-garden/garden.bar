@@ -43,8 +43,16 @@ value
 
 Value that bar represents. Accepts values in 0.-100. range (percentage).`value` is a [`kivy.properties.BoundedNumericProperty`](https://kivy.org/docs/api-kivy.properties.html#kivy.properties.BoundedNumericProperty) and defaults to `0`.
 
-**orientation** | Orientation of the value drawing.<br> Can take one of the 4 values: <br>`lr`: from left to right <br>`rl`: from right to left <br>`bt`: from bottom to top
-                `tb`: from top to bottom
+```
+orientation
+```
+
+Orientation of the value drawing. It can take one of the 4 values: 
+
+`lr`: from left to right
+`rl`: from right to left
+`bt`: from bottom to top
+`tb`: from top to bottom
 
 `orientation` is a `~kivy.properties.OptionProperty`
 and defaults to `bt`.
