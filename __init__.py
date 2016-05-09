@@ -150,7 +150,7 @@ class Bar(Widget):
             self._anim = a
         else:
             self._value = value
-
+            
 
 if __name__ == '__main__':
     from kivy.base import runTouchApp
@@ -159,45 +159,53 @@ if __name__ == '__main__':
 
     kv = Builder.load_string('''
 BoxLayout:
-
-    Bar:
-        id: bar
-        value: slider.value
-        animated: tbutton.state == 'down'
-        anim_duration: 1
-        color: 1, 0.2, 0.3, 1
-        orientation: spinner.text
-        anim_type: spinner2.text
-        on_value: print('Value changed to: {}'.format(self.value))
+    orientation: 'vertical'
 
     BoxLayout:
-        orientation: 'vertical'
-        size_hint: None, 1
-        width: '200dp'
 
-        Label:
-            text: 'Value: {}'.format(slider.value)
+        Bar:
+            id: bar
+            value: slider.value
+            animated: animated.state == 'down'
+            anim_duration: 1
+            color: picker.color
+            orientation: orientation.text
+            anim_type: anim.text
 
-        Slider:
-            id: slider
-            value: 30
-            max: 100
-            min: 0
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: None, 1
+            width: '250dp'
 
-        ToggleButton:
-            text: 'Animated'
-            id: tbutton
-            state: 'down'
+            Label:
+                text: 'Value: {}'.format(slider.value)
 
-        Spinner:
-            id: spinner
-            values: 'bt', 'tb', 'lr', 'rl'
-            text: 'bt'
+            Slider:
+                id: slider
+                value: 30
+                max: 100
+                min: 0
 
-        Spinner:
-            id: spinner2
-            text: 'linear'
-            values: 'linear', 'in_back', 'in_out_expo', 'out_elastic'
+            ToggleButton:
+                text: 'Animated'
+                id: animated
+                state: 'down'
+
+            Spinner:
+                id: orientation
+                values: 'bt', 'tb', 'lr', 'rl'
+                text: 'bt'
+
+            Spinner:
+                id: anim
+                text: 'linear'
+                values: 'linear', 'in_back', 'in_out_expo', 'out_elastic'
+
+    ColorPicker:
+        id: picker
+        size_hint: 1, None
+        height: '200dp'
+        on_parent: self.remove_widget(self.children[0].children[0])
 
     ''')
     runTouchApp(kv)
