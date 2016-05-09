@@ -25,9 +25,11 @@ b.value = 85
 
 ```python
 BoxLayout:
+
     Bar:
         value: 85
         orientation: 'lr' # horizontal bar
+
     Bar:
         value: 10
         orientation: 'bt' # vertical bar
