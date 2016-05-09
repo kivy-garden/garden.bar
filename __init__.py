@@ -68,6 +68,7 @@ Builder.load_string('''
             size: (self.width*self._value/100., self.height) if root.orientation in ('lr', 'rl') else (self.width, self.height*self._value/100.)
 ''')
 
+
 class Bar(Widget):
     """Bar representing the value from 0-100 percent range."""
 
@@ -144,8 +145,7 @@ class Bar(Widget):
             if self._anim:
                 Animation.cancel_all(self)
                 self._anim = None
-            a = Animation(_value=value, transition=self.anim_type,
-                duration=self.anim_duration)
+            a = Animation(_value=value, t=self.anim_type, d=self.anim_duration)
             a.start(self)
             self._anim = a
         else:
