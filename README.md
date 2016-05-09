@@ -49,15 +49,15 @@ orientation
 
 Orientation of the value drawing. It can take one of the 4 values:
 
-`lr` from left to right
-
-
-`rl` from right to left
-
-
-`bt` from bottom to top
-
-
-`tb` from top to bottom
+    `lr` from left to right
+    
+    
+    `rl` from right to left
+    
+    
+    `bt` from bottom to top
+    
+    
+    `tb` from top to bottom
 
 `orientation` is a [`kivy.properties.OptionProperty`](https://kivy.org/docs/api-kivy.properties.html#kivy.properties.OptionProperty) and defaults to `bt`.
