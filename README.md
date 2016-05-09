@@ -47,12 +47,18 @@ Value that bar represents. Accepts values in 0.-100. range (percentage).`value` 
 orientation
 ```
 
-Orientation of the value drawing. It can take one of the 4 values: 
+Orientation of the value drawing. It can take one of the 4 values:
 
-`lr`: from left to right
-`rl`: from right to left
-`bt`: from bottom to top
-`tb`: from top to bottom
+`lr` from left to right
+
+
+`rl` from right to left
+
+
+`bt` from bottom to top
+
+
+`tb` from top to bottom
 
 `orientation` is a `~kivy.properties.OptionProperty`
 and defaults to `bt`.
