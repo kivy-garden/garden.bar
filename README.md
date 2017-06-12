@@ -1,4 +1,8 @@
-#Bar widget
+<img src="https://github.com/kivy-garden/garden.bar/blob/master/screenshot.png" align="right" width="256" />
+
+
+
+# Bar widget
 
 `Bar` represents the percentage value from 0-100 range
 as colored rectangle, known from f.e. statistics graphs/charts. It has no interactive elements and is a display-only widget.
